@@ -71,7 +71,7 @@ img{
    margin-right: auto;
 }
 
-aside{
+aside a{
    width: 200px;
    position:fixed;
    top:4%;
@@ -79,9 +79,21 @@ aside{
    text-align: center;
    background-color: rgba(179, 179, 179, 0.486);
    padding: 10px;
-}
-
-aside a{
    text-decoration: none;
    color: black
+}
+
+
+
+footer {
+ 
+   text-align: center;
+   background-color: lightgray;
+}
+
+ol.referencias{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   
 }
