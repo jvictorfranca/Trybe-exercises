@@ -52,6 +52,36 @@ header h1 {
    padding-top: 30px;
 }
 
-table.center{
-   margin: auto
+table {
+background-color: rgb(221, 221, 221);
+margin-left: auto;
+margin-right: auto;
+}
+
+img{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#thumbnail{
+   width: 200px;
+   display: block;
+   margin-left:auto;
+   margin-right: auto;
+}
+
+aside{
+   width: 200px;
+   position:fixed;
+   top:4%;
+   right:2%;
+   text-align: center;
+   background-color: rgba(179, 179, 179, 0.486);
+   padding: 10px;
+}
+
+aside a{
+   text-decoration: none;
+   color: black
 }
