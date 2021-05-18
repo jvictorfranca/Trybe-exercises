@@ -1,0 +1,99 @@
+#fonte{
+   display: inline;
+}
+
+#pfonte{
+   display: inline;
+}
+
+table, th, td {
+   text-align: center;
+   width: 500px;
+   border: 1px solid black;
+}
+
+nav ul li{
+   display: inline-block;
+   width: 30%;
+   list-style: none;
+   text-align: center;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+}
+
+h1, h2, h3{
+   text-align: center;
+}
+
+nav ul li a{
+   color: purple;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+nav{
+   background-color: lightblue;
+   margin-top: 0px;
+   padding-top: 0px;
+   border: lightblue solid
+}
+
+header{
+   background-color: rgb(11, 11, 134);
+   color: white;
+   height: 100px;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+header h1 {
+   text-align: center;
+   padding-top: 30px;
+}
+
+table {
+background-color: rgb(221, 221, 221);
+margin-left: auto;
+margin-right: auto;
+}
+
+img{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#thumbnail{
+   width: 200px;
+   display: block;
+   margin-left:auto;
+   margin-right: auto;
+}
+
+aside a{
+   width: 200px;
+   position:fixed;
+   top:4%;
+   right:2%;
+   text-align: center;
+   background-color: rgba(179, 179, 179, 0.486);
+   padding: 10px;
+   text-decoration: none;
+   color: black
+}
+
+
+
+footer {
+ 
+   text-align: center;
+   background-color: lightgray;
+}
+
+ol.referencias{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
