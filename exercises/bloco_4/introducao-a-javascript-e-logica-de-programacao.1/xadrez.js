@@ -1,4 +1,6 @@
-let peca = "picanha"
+let peca = "Torre"
+
+peca= peca.toLowerCase()
 
 switch(peca){
   case "peao":
