@@ -92,8 +92,13 @@ footer {
 }
 
 ol.referencias{
-   text-align: center;
+   text-align: left;
    margin-left: auto;
    margin-right: auto;
    
+}
+
+p{
+   margin:auto;
+   width: 80%;
 }
