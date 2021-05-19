@@ -1,4 +1,4 @@
-let salario=3000
+let salario=1500.10
 let inss=0
 
 if (salario<=1556.94 & salario>0) {inss=(8/100)*salario}
@@ -20,11 +20,3 @@ else {console.log('erro2')}
 salario = salario - ir
 
 console.log ("INSS =" + inss + "; ir = " + ir + " salário = " + salario)  
-
-
-
-
-
-
-
-
