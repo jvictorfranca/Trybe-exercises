@@ -1,4 +1,4 @@
-let n = 7
+let n = 21
 let asteriscos= '*'
 let espaços= ''
 
