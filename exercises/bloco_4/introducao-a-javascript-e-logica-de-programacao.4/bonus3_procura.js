@@ -18,30 +18,16 @@ const basket = [
   'Banana', 'Pera', 'Abacate', 'Uva',
 ];
 
-//Procura unicos
-let unicos = []
-for (let index = 0 ; index < basket.length; index+=1){
-  let soma=0
-  for(let index2 = 0; index2<unicos.length; index2+=1){
-    if(unicos[index2] === basket[index]){soma+=1} 
-  }
-  if( soma<1) {unicos.push(basket[index])}
-}
-console.log(unicos)
-
-
-
-// Conta os unicos
-
 let cesta = {};
 
+let procurados = ['Melancia', 'Abacate', 'Uva', 'Laranja']
 
-for (let index = 0 ; index<unicos.length; index+=1){
+for (let index = 0 ; index<procurados.length; index+=1){
   let soma = 0
   for(index2=0 ; index2<basket.length ; index2+=1){
-    if(basket[index2]===unicos[index]){soma +=1}
+    if(basket[index2]===procurados[index]){soma +=1}
   }
-  cesta[unicos[index]] = soma
+  cesta[procurados[index]] = soma
 }
 console.log('sua cesta possui')
 console.log(cesta)
