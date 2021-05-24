@@ -6,3 +6,4 @@ let info = {
 info['recorrente']='sim'
 
 for (let keys in info) {console.log(info[keys])}
+
