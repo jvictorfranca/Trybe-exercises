@@ -30,7 +30,7 @@ maximo = aparição[0]
 for (let index in array) {
 if(maximo<aparição[index]){maximo = aparição[index]}
 }
-// console.log("Max aparição :"+ maximo)                            LOGA A APARIÇÃO MAXIMA
+// console.log("Max aparição :"+ maximo)                            LOGA A APARIÇÃO
 
 
 for(let index in aparição) {
