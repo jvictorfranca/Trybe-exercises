@@ -104,3 +104,19 @@ but2.addEventListener('click', mudaSextou)
 
 
 
+
+//6
+let days2 = document.querySelector('#days')
+
+days2.addEventListener("mouseover", zoomIn)
+days2.addEventListener("mouseout", zoomOut)
+
+
+function zoomIn(event) {
+  event.target.style.fontSize = '30px'
+}
+
+function zoomOut(event) {
+  event.target.style.fontSize = '18px'
+}
+
