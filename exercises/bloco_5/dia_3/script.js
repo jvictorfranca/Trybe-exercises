@@ -50,7 +50,7 @@ function feriadosButao(){
 }
 feriadosButao()
 //3
-let background = 'red'
+let background = 'lightblue'
 let normalColor = '#eee'
 let localizaHolyday = document.querySelectorAll('.holyday')
 
@@ -58,7 +58,8 @@ function mudaCor(){
   for (i=0; i<localizaHolyday.length; i+=1){
     if (localizaHolyday[i].style.backgroundColor === background){
   localizaHolyday[i].style.backgroundColor = normalColor
-    }else {localizaHolyday[i].style.backgroundColor = background}
+    }else {
+    localizaHolyday[i].style.backgroundColor = background}
 
   }
 }
@@ -88,10 +89,8 @@ function mudaSextou(){
   for (let i = 0; i < sextou.length; i+=1){
     if (sextou[i].innerText === 'sextou'){
       sextou[i].innerText = originalSexta[i]
-      console.log('é igual')
     }else{
       sextou[i].innerText = 'sextou'
-      console.log('é diferente')
     }
   }
 }
