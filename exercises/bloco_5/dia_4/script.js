@@ -1,11 +1,20 @@
 //fundo
 let body = document.querySelector('body')
+//cor
+let text = document.querySelector('div#texto')
+
+//adiciona if fundo
 
 if (localStorage['fundo'] === undefined){ body.style.backgroundColor = 'black'}
 else {
     body.style.backgroundColor = localStorage['fundo']}
 
-//adiciona cor
+//adiciona if cor
+
+if (localStorage['cor'] === undefined){ text.style.color = 'black'}
+else {
+    text.style.color = localStorage['cor']}
+
 
 
 
@@ -18,7 +27,7 @@ butCor1.style.width = '20px'
 butCor1.style.height = '20px'
 butCor1.style.margin = '5px'
 butCor1.style.display = 'inline-block'
-butCor1.className = cor;
+butCor1.className = 'fundo';
 
 
 }
@@ -36,7 +45,7 @@ function criaButaoCorLetra(cor){
     butCor1.style.height = '20px'
     butCor1.style.margin = '5px'
     butCor1.style.display = 'inline-block';
-    butCor1.className = cor;
+    butCor1.className = 'cor';
 }
 
 criaButaoCorLetra('red')
@@ -51,7 +60,22 @@ function mudaFundo(event){
 
 }
 
-let botao = document.querySelectorAll('#fundo div')
-for (i = 0 ; i<botao.length; i+=1){
-botao[i].addEventListener('click', mudaFundo)
+let botaoFundo = document.querySelectorAll('#fundo div')
+for (i = 0 ; i<botaoFundo.length; i+=1){
+botaoFundo[i].addEventListener('click', mudaFundo)
+}
+
+
+
+function mudaLetra(event){
+  text.style.color = event.target.style.backgroundColor
+  localStorage['cor'] = event.target.style.backgroundColor
+}
+
+
+
+
+let botaoCor = document.querySelectorAll('div.cor')
+for (i = 0 ; i < botaoCor.length; i+=1){
+botaoCor[i].addEventListener('click', mudaLetra)
 }
