@@ -1,0 +1,16 @@
+#botao{
+  display:inline-block;
+  height: 500px;
+  width: 20%;
+  position: absolute
+}
+
+#texto{
+  display: inline-block;
+  height: 500px;
+  width: 70%;
+}
+
+#fundo {
+  background-color: coral;
+}
