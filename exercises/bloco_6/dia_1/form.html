@@ -7,6 +7,7 @@
   <title>formulario</title>
 </head>
 <body>
+  <form action="" method="get">
   <fieldset>
     <label for="name"> Seu nome:
       <input type="text" name="name" id="name" maxlength="40" required>
@@ -51,10 +52,12 @@
         <input type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
         <br>
         <label for="inicio"> Data de inicio <br>
-          <input type="date" id="inicio" required>
+          <input type="text" placeholder="dd/mm/aa" id="inicio" required>
         </label>
       </fieldset>
       <button id="interrupt">Interrupt</button>
+    </form>
+    <div id="curriculo">curriculo</div>
   <script src="script.js"></script>
 </body>
 </html>
