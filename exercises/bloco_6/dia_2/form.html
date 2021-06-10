@@ -9,29 +9,30 @@
   <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
   <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
   <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+  <link rel="stylesheet" href="Just-validate-master/dist/css/justValidateTooltip.min.css">
   <script src="Just-validate-master/dist/js/just-validate.min.js"></script>
 </head>
 <body>
-  <form action="" method="get" class="form-horizontal">
+  <form action="" method="get" class="form-horizontal" id="formulario">
   <fieldset>
     <label class="form-control" for="name"> Seu nome:
-      <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
+      <input class="form-control" type="text" name="name" id="name" maxlength="40" required data-validate-field="name">
     </label>
     <br>
     <label class="form-control" for="email"> Email:
-      <input class="form-control" type="email" name="email" id="email" maxlength="50" required>
+      <input class="form-control" type="email" name="email" id="email" maxlength="50" required data-validate-field="email">
     </label>
     <br>
     <label class="form-control" for="cpf"> CPF:
-      <input class="form-control" type="number" name="cpf" id="cpf" maxlength="11" required>
+      <input class="form-control" type="number" name="cpf" id="cpf" maxlength="11" required data-validate-field="text">
     </label>
     <br>
     <label class="form-control" for="endereco"> Endereco:
-      <input class="form-control" type="text" name="endereco" id="endereco" maxlength="200" required>
+      <input class="form-control" type="text" name="endereco" id="endereco" maxlength="200" required data-validate-field="text">
     </label>
     <br>
     <label class="form-control" for="cidade"> Cidade:
-      <input class="form-control" type="text" name="cidade" id="cidade" maxlength="28" required>
+      <input class="form-control" type="text" name="cidade" id="cidade" maxlength="28" required data-validate-field="text">
     </label>
     <br> <br>
   <select name="estado" id="estado" required class="form-control">
@@ -60,9 +61,10 @@
           <input class="form-control" type="text" placeholder="dd/mm/aa" id="inicio" required>
         </label>
       </fieldset>
-      <button id="interrupt" class="btn btn-default" style="border: solid black 1px;">Interrupt</button>
+      <button id="interrupt" type="submit" class="btn btn-default" style="border: solid black 1px;">Interrupt</button>
     </form>
     <div id="curriculo">curriculo</div>
   <script src="script.js"></script>
+  
 </body>
 </html>

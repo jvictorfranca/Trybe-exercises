@@ -16,13 +16,6 @@ selection.appendChild(option)
 
 let interrupt = document.querySelector('#interrupt')
 
-function preventDef(event) {
-  event.preventDefault();
-}
-
-let buton = document.querySelector('#interrupt')
-buton.addEventListener('click', preventDef)
-
 let curriculo = document.querySelector('#curriculo')
 
 function clicaBotao(){
@@ -34,4 +27,4 @@ if (checaTudo() === true){
 
 document.getElementById('inicio').DatePickerX.init()
 
-new window.JustValidate('#name');
+new window.JustValidate('#formulario')
