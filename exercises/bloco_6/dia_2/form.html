@@ -5,57 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>formulario</title>
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+  <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+  <script src="Just-validate-master/dist/js/just-validate.min.js"></script>
 </head>
 <body>
-  <form action="" method="get">
+  <form action="" method="get" class="form-horizontal">
   <fieldset>
-    <label for="name"> Seu nome:
-      <input type="text" name="name" id="name" maxlength="40" required>
+    <label class="form-control" for="name"> Seu nome:
+      <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
     </label>
     <br>
-    <label for="email"> Email:
-      <input type="email" name="email" id="email" maxlength="50" required>
+    <label class="form-control" for="email"> Email:
+      <input class="form-control" type="email" name="email" id="email" maxlength="50" required>
     </label>
     <br>
-    <label for="cpf"> CPF:
-      <input type="number" name="cpf" id="cpf" maxlength="11" required>
+    <label class="form-control" for="cpf"> CPF:
+      <input class="form-control" type="number" name="cpf" id="cpf" maxlength="11" required>
     </label>
     <br>
-    <label for="endereco"> Endereco:
-      <input type="text" name="endereco" id="endereco" maxlength="200" required>
+    <label class="form-control" for="endereco"> Endereco:
+      <input class="form-control" type="text" name="endereco" id="endereco" maxlength="200" required>
     </label>
     <br>
-    <label for="cidade"> Cidade:
-      <input type="text" name="cidade" id="cidade" maxlength="28" required>
+    <label class="form-control" for="cidade"> Cidade:
+      <input class="form-control" type="text" name="cidade" id="cidade" maxlength="28" required>
     </label>
-    <br>
-  <select name="estado" id="estado" required>
+    <br> <br>
+  <select name="estado" id="estado" required class="form-control">
   </select>
 <br>
-  <label for="casa">
-    <input type="radio" name="casa" required id="casa"> Casa
+  <label class=".radio-inline" for="casa">
+    <input type="radio" class="radio-inline" name="casa" required id="casa"> Casa
   </label>
   
-  <label for="apartamento">
-    <input type="radio" name="casa" required id="apartamento"> Apartamento
+  <label class=".radio-inline" for="apartamento">
+    <input type="radio" class="radio-inline" name="casa" required id="apartamento"> Apartamento
   </label>
   </fieldset>
   <fieldset>
-    <label for="textarea"> Resumo do currículo
+    <label class="form-control" for="textarea"> Resumo do currículo
       <br>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" required maxlength="1000"></textarea>
+      <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="10" required maxlength="1000"></textarea>
     </label>
     <br>
-    <label for="cargo"> Cargo:
-      <input type="text" name="cargo" id="cargo" maxlength="40" required>
-      <label for="descricao-cargo"> Descrição do cargo:
-        <input type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
+    <label class="form-control" for="cargo"> Cargo:
+      <input class="form-control" type="text" name="cargo" id="cargo" maxlength="40" required>
+      <label class="form-control" for="descricao-cargo"> Descrição do cargo:
+        <input class="form-control" type="text" name="descricao-cargo" id="descricao-cargo" maxlength="500" required>
         <br>
-        <label for="inicio"> Data de inicio <br>
-          <input type="text" placeholder="dd/mm/aa" id="inicio" required>
+        <label class="form-control" for="inicio"> Data de inicio <br>
+          <input class="form-control" type="text" placeholder="dd/mm/aa" id="inicio" required>
         </label>
       </fieldset>
-      <button id="interrupt">Interrupt</button>
+      <button id="interrupt" class="btn btn-default" style="border: solid black 1px;">Interrupt</button>
     </form>
     <div id="curriculo">curriculo</div>
   <script src="script.js"></script>
