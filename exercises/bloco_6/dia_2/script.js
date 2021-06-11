@@ -25,6 +25,6 @@ if (checaTudo() === true){
 }
 }
 
-document.getElementById('inicio').DatePickerX.init()
+document.getElementById('inicio').DatePickerX.init()//Inicia o datePicker para fazer o input de data biito
 
-new window.JustValidate('#formulario')
+new window.JustValidate('#formulario') // Valida o formulario. OBS: No HTML tem as propriedades :  required data-validate-field="text" Que a documentação manda por
