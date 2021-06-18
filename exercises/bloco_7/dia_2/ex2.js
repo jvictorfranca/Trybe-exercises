@@ -44,7 +44,7 @@ const contaAlunos = (objeto) => {
   return contador;
 };
 
-console.log(contaAlunos(allLessons));
+// console.log(contaAlunos(allLessons));
 
 const obtemValor = (objeto, posição) => {
   let key = Object.values(objeto)[posição];
@@ -63,4 +63,44 @@ const existeNoObj = (objeto, chave, valor) => {
   return answer;
 };
 
-console.log(existeNoObj(lesson3, 'turno', 'manha'));
+// console.log(existeNoObj(lesson3, 'turno', 'noite'));
+
+const contaAlunosMateria = (objeto, Materia) => {
+  let contador = 0;
+
+  for (let index = 0; index < Object.keys(objeto).length; index += 1) {
+    if (objeto[Object.keys(objeto)[index]].materia === Materia) {
+      contador += objeto[Object.keys(objeto)[index]].numeroEstudantes;
+    }
+  }
+  return contador;
+};
+
+const contaAlunosProfessor = (objeto, Professor) => {
+  let contador = 0;
+
+  for (let index = 0; index < Object.keys(objeto).length; index += 1) {
+    if (objeto[Object.keys(objeto)[index]].professor === Professor) {
+      contador += objeto[Object.keys(objeto)[index]].numeroEstudantes;
+    }
+  }
+  return contador;
+};
+
+// console.log(contaAlunosMateria(allLessons, 'Matemática'));
+
+const logProfessor = (objeto, nomeProfessor) => {
+  let log = {};
+  log['Professor'] = nomeProfessor;
+  log['Estudantes'] = contaAlunosProfessor(objeto, nomeProfessor);
+  let materias = [];
+  for (let index = 0; index < Object.keys(objeto).length; index += 1) {
+    if (objeto[Object.keys(objeto)[index]].professor === nomeProfessor) {
+      materias.push(objeto[Object.keys(objeto)[index]].materia);
+    }
+  }
+  log['Materias'] = materias;
+  return log;
+};
+
+console.log(logProfessor(allLessons, 'Maria Clara'));
