@@ -18,7 +18,22 @@ function getChange(payable, paid) {
 //      {index +=1}
 //   }
 
+//FOR FUNCIONAL
+
+// let operador = 0;
+//   for (let index = 0; index < coins.length; index+=1){
+// operador = remaining/coins[index]
+// operador = Math.floor(operador)
+//     for(let index2=0; index2<operador; index2+=1){
+//       change.push(coins[index])
+//     }
+//     remaining = remaining - operador*coins[index]
+
+// }
+
 //   // escreva seu código aqui...
+
+
 
 if (remaining >= 0){
 let index = 0
