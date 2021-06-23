@@ -1,5 +1,6 @@
 
-Esta pasta contém os exercícios que irei fazer na Trybe
+Esta pasta contém os exercícios que irei fazer na Trybe.
+
 Para facilitar a consulta dos exercícios, os blocos possuem esta divisão:
 
 '1.3.Unix & Bash - Parte 1.odt'
