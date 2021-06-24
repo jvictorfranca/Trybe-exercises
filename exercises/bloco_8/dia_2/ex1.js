@@ -65,7 +65,7 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-//Ex 1
+//Ex 1: Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947
 function authorBornIn1947() {
   let item = books.find((book) => book.author.birthYear === 1947);
   return item.author.name;
@@ -73,7 +73,7 @@ function authorBornIn1947() {
 
 assert.strictEqual(authorBornIn1947(), 'Stephen King');
 
-// Ex 2:
+// Ex 2: Retorne o nome do livro de menor nome.
 
 function smallerName() {
   let nameBook = books[0].name;
@@ -90,7 +90,7 @@ function smallerName() {
 
 assert.strictEqual(smallerName(), 'Duna');
 
-// Ex 3:
+// Ex 3: Encontre o primeiro livro cujo nome possui 26 caracteres.
 
 let expectedResult = {
   author: {
@@ -110,7 +110,7 @@ function getNamedBook() {
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);
 
-// Ex 4:
+// Ex 4: Ordene os livros por data de lançamento em ordem decrescente.
 
 expectedResult = [
   {
@@ -163,3 +163,16 @@ function booksOrderedByReleaseYearDesc() {
 }
 
 assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
+
+//Ex 5: Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+
+expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every(
+    (book) =>
+      book.author.birthYear - 1900 > 0 && book.author.birthYear - 1900 < 100
+  );
+}
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
