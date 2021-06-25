@@ -202,3 +202,50 @@ function oldBooksOrdered() {
 }
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
+
+//Ex 5:Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+expectedResult = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
+
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
+  return books
+    .filter(
+      (book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica'
+    )
+    .map((book) => book.author.name)
+    .sort();
+}
+
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+
+//Ex 6: Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+expectedResult = ['O Senhor dos Anéis', 'Fundação', 'O Chamado de Cthulhu'];
+
+function oldBooks() {
+  // escreva seu código aqui
+  return books
+    .filter((book) => 2021 - book.releaseYear > 60)
+    .map((book) => book.name);
+}
+
+assert.deepStrictEqual(oldBooks(), expectedResult);
+
+//Ex 7: Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  return books.find(
+    (book) =>
+      book.author.name[1] === '.' &&
+      book.author.name[4] === '.' &&
+      book.author.name[7] === '.'
+  ).name;
+}
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
