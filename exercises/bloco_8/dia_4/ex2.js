@@ -92,3 +92,14 @@ function averageAge() {
 }
 
 assert.strictEqual(averageAge(), expectedResult);
+
+expectedResult = 'As Crônicas de Gelo e Fogo';
+
+function longestNamedBook() {
+  // escreva seu código aqui
+  return books.reduce((bigger, curr) =>
+    bigger.name.length > curr.name.length ? bigger : curr
+  ).name;
+}
+
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
