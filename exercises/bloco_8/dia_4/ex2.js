@@ -104,7 +104,10 @@ function longestNamedBook() {
 assert.deepStrictEqual(longestNamedBook(), expectedResult);
 
 function allNames() {
-  return books.reduce((allArray, curr) => allArray.push(curr.name), []);
+  return books.reduce((allArray, curr) => {
+    allArray.push(curr.name);
+    return allArray;
+  }, []);
 }
 
-// console.log(allNames());
+console.log(allNames());
