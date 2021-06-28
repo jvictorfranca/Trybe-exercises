@@ -85,8 +85,7 @@ function averageAge() {
   // escreva seu código aqui
   let sumYears = books.reduce((sum, curr) => {
     let age = curr.releaseYear - curr.author.birthYear;
-    sum += age;
-    return sum;
+    return sum + age;
   }, 0);
   return sumYears / books.length;
 }
@@ -103,3 +102,9 @@ function longestNamedBook() {
 }
 
 assert.deepStrictEqual(longestNamedBook(), expectedResult);
+
+function allNames() {
+  return books.reduce((allArray, curr) => allArray.push(curr.name), []);
+}
+
+// console.log(allNames());
