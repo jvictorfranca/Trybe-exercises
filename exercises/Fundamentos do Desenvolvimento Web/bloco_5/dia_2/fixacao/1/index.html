@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+
+  <p>
+    Acesse o elemento elementoOndeVoceEsta . <br>
+    Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.<br>
+    Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?<br>
+    Acesse o primeiroFilho a partir de pai .<br>
+    Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .<br>
+    Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .<br>
+    Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .<br>
+    Agora acesse o terceiroFilho a partir de pai<br> .</p>
+
+
+
+</body>
+</html>
+
+document.querySelector('div #elementoOndeVoceEsta').parentNode.style.color='red'
+document.querySelector('div #primeiroFilhoDoFilho').innerText = 'Alou eu sou o primeiro filho do filho'
+document.querySelector('div #pai').childNodes[1]
+document.querySelector('div #elementoOndeVoceEsta').parentNode.innerText
+
+
+
+

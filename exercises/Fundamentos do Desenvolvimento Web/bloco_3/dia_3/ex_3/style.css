@@ -1,0 +1,18 @@
+h1,p{
+   text-align: center;
+}
+
+li:hover{
+
+   background-color: red;
+}
+
+li:active{
+font-family: 'Courier New', Courier, monospace;
+color: white;
+
+}
+
+ol, li{
+   list-style: none;
+}
