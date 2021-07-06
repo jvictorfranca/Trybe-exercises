@@ -4,6 +4,7 @@ Esta pasta contém os exercícios que irei fazer na Trybe.
 Para facilitar a consulta dos exercícios, os blocos possuem esta divisão:
 
 - [ ] Fundamentos do Desenvolvimento Web:
+
 1.3.Unix & Bash - Parte 1
 
 1.4. Unix & Bash - Parte 2
