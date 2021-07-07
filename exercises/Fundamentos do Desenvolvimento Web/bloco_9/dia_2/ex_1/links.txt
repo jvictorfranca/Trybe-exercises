@@ -1,0 +1,6 @@
+curl -H "Accept: text/html" "https://icanhazdadjoke.com/"
+Para fazer o HTML
+curl -H "Accept: text/plain" "https://icanhazdadjoke.com/"
+Para fazer o texto
+curl -H "Accept: application/json" "https://icanhazdadjoke.com/"
+Para fazer a excecução
