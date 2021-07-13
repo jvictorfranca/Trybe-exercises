@@ -11,3 +11,4 @@ describe('Iex1', ()=>{
    expect(()=> {sum('0', 0)}).toThrowError(new Error('parameters must be numbers'))
   })
 })
+
