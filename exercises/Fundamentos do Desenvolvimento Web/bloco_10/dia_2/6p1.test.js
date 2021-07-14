@@ -5,12 +5,25 @@ const findAnimalByName = (name) => (
 );
 
 const  getAnimal = async(name) => {
-  // Adicione o código aqui.
-  let answer =  Animals.find((animal)=> animal.name === name)
 
-if (answer !== undefined) {return answer}
-else {throw('Nenhum animal com esse nome!')}
-};
+  return new Promise ((resolve, reject)=>{
+    setTimeout( () => {
+      let answer =  Animals.find((animal)=> animal.name === name)
+    
+      if (answer !== undefined) {resolve(answer)}
+      else {reject('Nenhum animal com esse nome!')}
+    }, 300)
+  })
+
+
+
+}
+
+
+
+
+
+
 // ---------------------
 
 describe('Testando promise - findAnimalByName', () => {
