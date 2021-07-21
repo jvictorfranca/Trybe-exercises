@@ -24,15 +24,27 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pokedex{
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Pokemon {
+  background-color: lightblue;
+  border: solid black 1px;
+  border-radius: 5%;
+  display: flex;
+  width: 500px;
+  flex-grow: 1;
+  justify-content: space-around;
 }
+.Pokemon p{
+  width: 100%;
+  flex-direction: column;
+  font-size: 100%;
+  text-align: center;
+
+}
+
+
