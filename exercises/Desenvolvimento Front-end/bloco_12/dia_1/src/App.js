@@ -1,11 +1,11 @@
 import data from './data';
 import './App.css';
-import Pokedex from './Pokedex';
+import Only1Pokemon from './Only1Pokemon';
 
 
 function App() {
   return (
-    <Pokedex />
+    <Only1Pokemon pokemons={data} />
   );
 }
 
