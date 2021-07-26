@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css';
 import Pokemon from './Pokemon'
+import Button from './Button';
+import pokemons from './data';
 
 class Only1Pokemon extends React.Component {
   constructor(props){
@@ -19,14 +21,17 @@ class Only1Pokemon extends React.Component {
 
   nextPokemon(totalNumber){
     this.setState((state, _props)=>({
-      current: this.state.current === totalNumber ? 0 : this.state.current +1
+      current: this.state.current === totalNumber-1 ? 0 : this.state.current +1
     }))
+    console.log(totalNumber)
+    console.log(this.state.current)
   }
 
   getFiltered(){
      const {pokemons} = this.props;
      console.log(pokemons)
      const {filter} = this.state;
+     console.log(filter)
      console.log(pokemons.filter((pokemon)=>pokemon.type === filter))
      return(
  
@@ -49,6 +54,12 @@ class Only1Pokemon extends React.Component {
     <div className="only1" >
      
     <Pokemon pokemon={current} />
+    <Button type = 'all' action={()=>{this.filteredPokemon('all')}}/>
+   {types.map((type) =>  <Button key = {type} type = {type} action={()=>{this.filteredPokemon(type)}}/>
+   )}
+    
+    <Button type = 'Next' action={()=>{this.nextPokemon(filteredPokemons.length)}} length={filteredPokemons.length}/>
+   
       
     </div>
   );}
