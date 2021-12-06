@@ -16,14 +16,14 @@
 
 
 const express = require('express')
-//const bodyParse = require('body-parse')
+const bodyParser = require('body-parser')
 const  errMiddleware = require('./errMiddleware')
 const loginMiddleware = require('./loginMiddleware')
 const registerMiddleware = require('./registeMiddleware')
 
 
 const app = express()
-app.use(express.json())
+app.use(bodyParser.json())
 app.post('/user/register', registerMiddleware)
 app.post('/user/login', loginMiddleware)
 
